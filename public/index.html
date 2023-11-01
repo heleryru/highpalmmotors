@@ -1,0 +1,209 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>High Palm Motors</title>
+    <!-- Site core CSS -->
+    <link rel="stylesheet" href="https://use.typekit.net/faj6ojr.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="assets/css/main.css?269ecf3" rel="stylesheet">    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.7/dist/semantic.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.7/dist/semantic.min.js"></script>
+</head>
+
+<body>
+<div class="ui stackable grid equal height">
+
+    <!-- Desktop View
+    <div class="computer only row equal-height">-->
+
+    <div class="row equal-height">
+
+        <!-- Logo column (25%) -->
+        <button class="burger-menu ui segment icon button" onclick="toggleMenu()">
+            <i class="bars icon"></i>
+        </button>
+
+        <div class="header-area logo four wide column">
+            <!-- Mobile Navbar -->
+            <div class="ui segment vertical menu mobile-menu" id="mobile-menu" style="display: none;">
+                <a class="item">HOME</a>
+                <a class="item">BOOK YOUR APPOINTMENT</a>
+                <a class="item">HOW IT WORKS</a>
+                <a class="item">CONTACT US</a>
+            </div>
+
+            <img src="assets/img/HPM_LOGO.png" id="logo">
+            <!-- Navbar -->
+            <div class="header-navbar row ui equal-height" style="height: 54px">
+                <div class="ui secondary menu"></div>
+            </div>
+            <!-- Filler space -->
+            <div class="header-filler second_row row equal-height"></div>
+            <!-- Motto with icon -->
+            <div class="header-motto row equal-height">
+            </div>
+        </div>
+
+
+        <!-- Content column (75%) -->
+        <div class="header-area twelve wide column">
+
+            <!-- Navbar -->
+            <div id="header-navbar" class="header-navbar row ui equal-height">
+                <div class="ui secondary menu">
+                    <a class="item">HOME</a>
+                    <a class="item">BOOK YOUR APPOINTMENT</a>
+                    <a class="item">HOW IT WORKS</a>
+                    <a class="item">CONTACT US</a>
+                </div>
+            </div>
+
+
+            <!-- Filler space -->
+            <div class="header-filler second_row row equal-height"></div>
+            <!-- Motto with icon -->
+            <div class="row">
+                <div class="header-motto ui grid">
+                    <div class="twelve wide column" style="width: auto !important;">
+                        <h2 id="motto">We buy any car and we pay the best price!</h2>
+                    </div>
+                    <!-- <div id="cash_img_container" class="four wide column cash-container" >-->
+                    <div id="cash_img_container" class="column cash-container" >
+                        <img class="cash_img" src="assets/img/HPM_ICON_CASH.png" ></img> <!-- Replace 'icon-name' with your desired icon name from Fomantic UI -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Form Space -->
+        <div class="form_container row">
+            <div class="first_column eight wide column">
+            </div>
+            <div class="form_box eight wide column">
+                <img class="start_img" src="assets/img/startHere.png">
+                <form class="horizontal-form">
+                    <div class="form_row">
+                        <label class="form_label" for="input1">VIN</label><br>
+                        <input class="form_input" type="text" id="input1" name="input1">
+                    </div>
+                    <div class="form_row">
+                        <label class="form_label" for="input2">MAKE</label><br>
+                        <input class="form_input" type="text" id="input2" name="input2">
+                    </div>
+                    <div class="form_row">
+                        <label class="form_label" for="input3">MODEL</label><br>
+                        <input class="form_input" type="text" id="input3" name="input3">
+                    </div>
+                    <div class="form_row">
+                        <label class="form_label" for="input4">YEAR</label><br>
+                        <input class="form_input" type="text" id="input4" name="input4">
+                    </div>
+                </form>
+                <input type="submit" value="CONTINUE">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Guide & Customer Reviews -->
+    <div class="guideContainer">
+        <div class="main-container">
+            <div class="guideCustomer">
+                <div class="circle">
+                    <div class="guide-text">
+                        <h2 class="number">1.</h2>
+                        <p class="text">SEND US THE CAR DETAILS</p>
+                    </div>
+                    <img id="details-img" class="guide_img" src="../assets/img/HPM_ICON_CAR%20DETAILS.png" alt="Image 1">
+                </div>
+                <div class="circle">
+                    <div class="guide-text">
+                        <h2 class="number">2.</h2>
+                        <p class="text">BOOK YOUR APPOINTMENT</p>
+                    </div>
+                    <img id="date-img" class="guide_img" src="assets/img/HPM_ICON_DATE.png" alt="Image 2">
+                </div>
+                <div class="circle">
+                    <div class="guide-text">
+                        <h2 class="number">3.</h2>
+                        <p class="text">GET YOUR CHECK</p>
+                    </div>
+                    <img id="check-img" class="guide_img" src="assets/img/HPM_ICON_CHECK.png" alt="Image 3">
+                </div>
+            </div>
+
+
+            <!-- Cards -->
+            <div class="card-row">
+                <div class="card">
+                    <h2 class="card-title">E.Xample</h2>
+                    <p class="card-text">“ I wanted a good car, instead I got a great one! “</p>
+                    <p class="card-bottom">G.Reat</p>
+
+                </div>
+                <div class="card">
+                    <h2 class="card-title">C.Ustomer</h2>
+                    <p class="card-text">“ I wanted a good car, instead I got a great one! “</p>
+                    <p class="card-bottom">S.Ervice</p>
+                </div>
+                <div class="card">
+                    <h2 class="card-title">R.Eview</h2>
+                    <p class="card-text">“ I wanted a good car, instead I got a great one! “</p>
+                    <p class="card-bottom">E.Veryday</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <h3 class="footer-contact-title">CONTACT INFORMATION</h3>
+                    <h3 class="footer-contact">EXAMPLE STREET 123,<br>
+                        SOMEWHERE, OVER THERE<br>
+                        012 01234<br><br></h3>
+                    <h3 class="web-name footer-contact">WWW.BUYANYCARDPLACEHOLDER.COM</h3>
+                </div>
+                <img class="map_img" src="assets/img/test_map.png">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Mobile View
+    <div class="mobile only row">
+        <div class="sixteen wide column">
+            <button class="ui segment icon button" onclick="toggleMenu()">
+                <i class="bars icon"></i>
+            </button>
+            <div class="ui segment vertical menu mobile-menu" id="mobile-menu" style="display: none;">
+                <a class="item">HOME</a>
+                <a class="item">BOOK YOUR APPOINTMENT</a>
+                <a class="item">HOW IT WORKS</a>
+                <a class="item">CONTACT US</a>
+            </div>
+            <div class="mobile_logo">
+                <img class="mobile_img" src="assets/img/HPM_LOGO.png">
+            </div>
+            <h2 class="mobile_motto">We buy any car and we pay the best price!</h2>
+        </div>
+    </div>
+</div>
+-->
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("mobile-menu");
+            // var menu = document.getElementById("header-navbar");
+            if (menu.style.display === "none") {
+                menu.style.display = "block";
+            } else {
+                menu.style.display = "none";
+            }
+
+        }
+    </script>
+</body>
+</html>
