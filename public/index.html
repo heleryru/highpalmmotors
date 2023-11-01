@@ -102,7 +102,7 @@
                         <input class="form_input" type="text" id="input4" name="input4">
                     </div>
                 </form>
-                <input type="submit" value="CONTINUE">
+                <input type="submit" value="CONTINUE" onclick="send()">
             </div>
         </div>
     </div>
@@ -190,20 +190,44 @@
             <h2 class="mobile_motto">We buy any car and we pay the best price!</h2>
         </div>
     </div>
+    -->
 </div>
--->
 
-    <script>
-        function toggleMenu() {
-            var menu = document.getElementById("mobile-menu");
-            // var menu = document.getElementById("header-navbar");
-            if (menu.style.display === "none") {
-                menu.style.display = "block";
-            } else {
-                menu.style.display = "none";
-            }
 
-        }
-    </script>
+<!--    <script>-->
+
+<!--        function toggleMenu() {-->
+<!--            var menu = document.getElementById("mobile-menu");-->
+<!--            // var menu = document.getElementById("header-navbar");-->
+<!--            if (menu.style.display === "none") {-->
+<!--                menu.style.display = "block";-->
+<!--            } else {-->
+<!--                menu.style.display = "none";-->
+<!--            }-->
+
+<!--        }-->
+
+<!--        function send() {-->
+<!--            console.log("send");-->
+<!--            let vin = document.getElementById("vin").value;-->
+<!--            let make = document.getElementById("make").value;-->
+<!--            let model = document.getElementById("model").value;-->
+<!--            let year = document.getElementById("year").value;-->
+<!--            let xhttp = new XMLHttpRequest();-->
+<!--            xhttp.onreadystatechange = function() {-->
+<!--                if (this.readyState === 4 && this.status === 200) {-->
+<!--                }-->
+<!--            };-->
+<!--            xhttp.open("POST", "/test", true);-->
+<!--            xhttp.setRequestHeader("Content-type", "application/json");-->
+<!--            xhttp.send(JSON.stringify({-->
+<!--                "vin": vin,-->
+<!--                "make": make,-->
+<!--                "model": model,-->
+<!--                "year": year-->
+<!--            }));-->
+<!--        }-->
+<!--    </script>-->
+<script src="../src/app.js"></script>
 </body>
 </html>
